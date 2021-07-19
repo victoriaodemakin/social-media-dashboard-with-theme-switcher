@@ -5,13 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Social Media Dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="./images/favicon-32x32.png"
-  />
+
   <body>
     <section class="container">
       <div class="warpper">
@@ -19,40 +28,45 @@
         <p>Total Followers: 23,004</p>
         <hr />
       </div>
-      <div>
+      <div class="toggle-area">
         <p>Dark Mode</p>
-      </div>
-      <div>
-        <input type="checkbox" class="toggle-btn" id="toggle-checkbox" />
-        <!--the class will be usd to style the checkbox while the id will be refernced with js-->>
-        <label for="checkbox" class="label"></label>
-        <!--the label linking with the id, when the checkbox is clicked it will toggle-->
-        <i class="fas fa-moon"></i>
-        <i class="fas fa-sun"></i>
+        <input type="checkbox" class="toggle-btn" id="checkbox" />
+        <!--the class will be usd to style the checkbox while the id will be refernced with js-->
+        <label for="checkbox" class="label">
+          <img src="/images/moon.png" alt="moon icon " class="fa-moon">
+          <img src="/images/sun.png" alt="sun icon" class="fa-sun">
         <div class="slider-ball"></div>
       </div>
+        </label>
+        <!--the label linking with the id, when the checkbox is clicked it will toggle-->
+        
     </section>
 
     <section class="container-2">
       <div class="column">
         <div class="facebook-column">
+          <div>
           <img
             src="/images/icon-facebook.svg"
             alt="facebook-icon"
             class="facebook-icon"
           />
           <p>@nathanf</p>
+        </div>
           <br />
           <h2>1987</h2>
           <br />
-          <p>followers</p>
+          <h3>followers</h3>
           <br />
-          <img
+          <div class="green">
+            <img
             src="/images/icon-up.svg"
             alt="increase in followers"
             class="green-arrow"
           />
-          <p>12 today</p>
+          <p class="arrow-text">12 today</p>
+          </div>
+          
         </div>
       </div>
 
@@ -69,7 +83,7 @@
           </div>
           <h2>1044</h2>
           <br />
-          <p>followers</p>
+          <h3>followers</h3>
           <br />
           <div class="area-2">
             <img
@@ -84,178 +98,213 @@
 
       <div class="column">
         <div class="instagram-column">
-          <img
+          <div class="insta-area">
+            <img
             src="/images/icon-instagram.svg"
             alt="instagram-icon"
             class="instagram-icon"
           />
           <p>@realnathanf</p>
+          </div>
+          
           <br />
           <h2>11K</h2>
           <br />
-          <p>followers</p>
+          <h3>followers</h3>
           <br />
-          <img
+          <div class="insta-area2">
+            <img
             src="/images/icon-up.svg"
             alt="increase in followers"
             class="green-arrow"
           />
           <p>1099 today</p>
+          </div>
         </div>
       </div>
 
       <div class="column">
         <div class="youtube-column">
-          <img
+          <div class="youtube-area">
+            <img
             src="/images/icon-youtube.svg"
             alt="youtube-icon"
             class="youtube-icon"
           />
           <p>Nathan F.</p>
+          </div>
+          
           <br />
           <h2>8239</h2>
           <br />
-          <p>Subscribers</p>
+          <h3>Subscribers</h3>
           <br />
-          <img
+          <div class="youtube-area2">
+            <img
             src="/images/icon-down.svg"
             alt="decrease in followers"
             class="red-arrow"
           />
           <p>144 today</p>
+          </div>
+          
         </div>
       </div>
     </section>
     <div>
-      <h3>Overview - Today</h3>
+      <h4>Overview - Today</h4>
     </div>
 
     <section class="container-3">
       <div class="Dashboard">
         <div>
+          
           <p>Page Views</p>
-          <img
-            src="/images/icon-facebook.svg"
-            alt="facebook-icon"
-            class="facebook-icon"
-          />
+          <h5>87</h5>
+          
         </div>
+        <div class="dash2">
+          <img
+          src="/images/icon-facebook.svg"
+          alt="facebook-icon"
+          class="facebook-icon"
+        />
         <div>
-          <p>87</p>
           <img src="/images/icon-up.svg" alt="increase in page views" />
           <p>3%</p>
         </div>
+        </div>
       </div>
 
       <div class="Dashboard">
         <div>
           <p>Likes</p>
+          <h5>52</h5>
+        </div>
+        <div class="dash2">
           <img
             src="/images/icon-facebook.svg"
             alt="facebook-icon"
             class="facebook-icon"
           />
-        </div>
-        <div>
-          <p>52</p>
-          <img src="/images/icon-down.svg" alt="decrease in likes" />
-          <p>2%</p>
+          <div>
+            <img src="/images/icon-down.svg" alt="decrease in likes" />
+          <p class="red">2%</p>
+          </div>
         </div>
       </div>
 
       <div class="Dashboard">
         <div>
           <p>Likes</p>
+          <h5>5462</h5>
+          
+        </div>
+        <div class="dash2">
           <img
             src="/images/icon-instagram.svg"
             alt="instagram-icon"
             class="instagram-icon"
           />
-        </div>
-        <div>
-          <p>5462</p>
-          <img src="/images/icon-up.svg" alt="increase in likes" />
-          <p>2257%</p>
+          <div>
+            <img src="/images/icon-up.svg" alt="increase in likes" />
+            <p>2257%</p>
+          </div>
         </div>
       </div>
 
       <div class="Dashboard">
         <div>
           <p>Profile Views</p>
+          <h5>52k</h5>
+        </div>
+        <div class="dash2">
           <img
             src="/images/icon-instagram.svg"
             alt="instagram-icon"
             class="instagram-icon"
           />
-        </div>
-        <div>
-          <p>52k</p>
-          <img src="/images/icon-up.svg" alt="increase in Profile views" />
-          <p>1375%</p>
+          <div>
+            <img src="/images/icon-up.svg" alt="increase in Profile views" />
+            <p>1375%</p>
+          </div>
         </div>
       </div>
 
       <div class="Dashboard">
         <div>
           <p>Retweets</p>
+          <h5>117</h5>
+          
+         
+        </div>
+        <div class="dash2">
           <img
             src="/images/icon-twitter.svg"
             alt="twitter-icon"
-            class="twitter-icon"
-          />
-        </div>
-        <div>
-          <p>117</p>
-          <img src="/images/icon-up.svg" alt="increase in Retweets" />
-          <p>303%</p>
+            class="twitter-icon" />
+          <div>
+            <img src="/images/icon-up.svg" alt="increase in Retweets" />
+            <p>303%</p>
+          </div>
+          
         </div>
       </div>
 
       <div class="Dashboard">
         <div>
           <p>Likes</p>
+          <h5>507</h5>
+          
+        </div>
+        <div class="dash2">
           <img
             src="/images/icon-twitter.svg"
             alt="twitter-icon"
             class="twitter-icon"
           />
-        </div>
-        <div>
-          <p>507</p>
-          <img src="/images/icon-up.svg" alt="increase in likes" />
-          <p>553%</p>
+          <div>
+            <img src="/images/icon-up.svg" alt="increase in likes" />
+            <p>553%</p>
+          </div> 
         </div>
       </div>
 
       <div class="Dashboard">
         <div>
           <p>likes</p>
+          <h5>107</h5>
+          
+        </div>
+        <div class="dash2">
           <img
             src="/images/icon-youtube.svg"
             alt="youtube-icon"
             class="youtube-icon"
           />
-        </div>
-        <div>
-          <p>107</p>
-          <img src="/images/icon-down.svg" alt="decrease in likes" />
-          <p>19%</p>
+          <div>
+            <img src="/images/icon-down.svg" alt="decrease in likes" />
+            <p class="red">19%</p>
+          </div>
         </div>
       </div>
 
       <div class="Dashboard">
         <div>
           <p>Total Views</p>
+          <h5>1407</h5>
+          
+        </div>
+        <div class="dash2">
           <img
             src="/images/icon-youtube.svg"
             alt="youtube-icon"
             class="youtube-icon"
           />
-        </div>
-        <div>
-          <p>1407</p>
-          <img src="/images/icon-down.svg" alt="decrease in total views" />
-          <p>1407%</p>
+          <div>
+            <img src="/images/icon-down.svg" alt="decrease in total views" />
+            <p class="red">1407%</p>
+          </div>
         </div>
       </div>
     </section>

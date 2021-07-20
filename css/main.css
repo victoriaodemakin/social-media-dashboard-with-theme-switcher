@@ -49,20 +49,25 @@ html {
   --toggle-ball: hsl(225, 100%, 98%);
 }
 
-/*html[data-theme='dark'] {
-        --bg: hsl(230, 17%, 14%);
-        --text:hsl(0, 0%, 100%);
-        --bg-panel:hsl(232, 19%, 15%);
-        --card-bg:hsl(228, 28%, 20%);
-        --dark-text:hsl(228, 34%, 66%);
-        --toggle:linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
-        --arrow-up:hsl(163, 72%, 41%);
-        --arrow-down:hsl(356, 69%, 56%);
-        --facebook-color:hsl(208, 92%, 53%);
-        --instagram-color:linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
-        --twitter-color:hsl(203, 89%, 53%);
-        --youtube-color:hsl(348, 97%, 39%);
-      }*/
+html[data-theme="dark"] {
+  --bg: hsl(230, 17%, 14%);
+  --text: hsl(0, 0%, 100%);
+  --bg-panel: hsl(232, 19%, 15%);
+  --card-bg: hsl(228, 28%, 20%);
+  --dark-text: hsl(228, 34%, 66%);
+  --toggle: linear-gradient(
+    to bottom right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+  --arrow-up: hsl(163, 72%, 41%);
+  --arrow-down: hsl(356, 69%, 56%);
+  --facebook-color: hsl(208, 92%, 53%);
+  --instagram-color: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --twitter-color: hsl(203, 89%, 53%);
+  --youtube-color: hsl(348, 97%, 39%);
+  --toggle-ball: hsl(230, 17%, 14%);
+}
 
 .container {
   max-width: 100%;
@@ -114,7 +119,7 @@ hr {
   display: block;
 }
 .label {
-  background-color: var(--toggle);
+  background: var(--toggle);
   display: flex;
   /* the align center and justify properties affect the icon in the label tag */
   align-items: center;
@@ -189,6 +194,7 @@ hr {
   font-size: 1em;
   font-weight: 200;
   font-family: var(--font);
+  color: var(--dark-text);
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-top: -1em;
@@ -258,6 +264,7 @@ hr {
   font-size: 1em;
   font-weight: 200;
   font-family: var(--font);
+  color: var(--dark-text);
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-top: -15px;
@@ -327,6 +334,7 @@ hr {
   font-size: 1em;
   font-weight: 200;
   font-family: var(--font);
+  color: var(--dark-text);
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-top: -15px;
@@ -396,6 +404,7 @@ hr {
   font-size: 1em;
   font-weight: 200;
   font-family: var(--font);
+  color: var(--dark-text);
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-top: -15px;
@@ -479,6 +488,9 @@ div h4 {
 }
 .Dashboard .dash2 div {
   display: flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   justify-content: space-evenly;
 }
 
@@ -501,4 +513,752 @@ div h4 {
   text-transform: capitalize;
   text-align: right;
   font-weight: 500;
+}
+@media all and (min-width: 1024px) {
+  .container {
+    width: 100%;
+    background-color: var(--bg-panel);
+    border-end-end-radius: 25px;
+    border-end-start-radius: 25px;
+    padding: 2em 1em 2.5em 1em;
+    overflow-x: hidden;
+  }
+  .warpper {
+    width: 100%;
+    background-color: var(--bg-panel);
+    margin-left: 2.4em;
+  }
+  h1 {
+    padding-top: 1.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  .warpper p {
+    display: block;
+    margin: 0.5em 1em -2em 1em;
+  }
+  hr {
+    display: none;
+  }
+  .toggle-area {
+    text-align: right;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding: 0.5em 1em 1em 2em;
+    margin-bottom: 8em;
+    margin-left: -2.2em;
+  }
+  .toggle-area p {
+    margin-right: 1em;
+  }
+  .label {
+    background: var(--toggle);
+    display: flex;
+    /* the align center and justify properties affect the icon in the label tag */
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 25px; */
+    border-radius: 50px;
+    height: 26px;
+    width: 50px;
+    position: relative;
+  }
+  .container-2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
+    padding: 0 4em;
+  }
+  .column {
+    width: 100%;
+    text-align: center;
+    padding: 0 1.3em;
+  }
+  .facebook-column {
+    border-top: 5px solid var(--facebook-color);
+    background-color: var(--card-bg);
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    bottom: 2em;
+    padding: 2em 0;
+  }
+  .facebook-column div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0 6em;
+  }
+  .facebook-column h2 {
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .facebook-column h3 {
+    font-size: 1em;
+    font-weight: 200;
+    font-family: var(--font);
+    color: var(--dark-text);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: -1em;
+  }
+  .facebook-column p {
+    color: var(--dark-text);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    text-transform: lowercase;
+    display: block;
+  }
+  .facebook-column img {
+    width: 30px;
+  }
+  .green {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .green img {
+    width: 10px;
+    margin-right: -2em;
+  }
+  .green p {
+    color: var(--arrow-up);
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: var(--font);
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .twitter-column {
+    border-top: 5px solid var(--twitter-color);
+
+    background-color: var(--card-bg);
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 2em 0;
+    margin-top: -2em;
+    margin-bottom: 2em;
+  }
+  .twitter-column div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0em 6em;
+  }
+  .twitter-column h2 {
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--text);
+    padding-top: 20px;
+  }
+  .twitter-column h3 {
+    font-size: 1em;
+    font-weight: 200;
+    font-family: var(--font);
+    color: var(--dark-text);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: -15px;
+  }
+  .twitter-column p {
+    color: var(--dark-text);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    text-transform: lowercase;
+    display: block;
+  }
+  .twitter-column img {
+    width: 30px;
+  }
+  .area-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .area-2 img {
+    width: 10px;
+    margin-right: -2em;
+  }
+  .area-2 p {
+    color: var(--arrow-up);
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: var(--font);
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .instagram-column {
+    border-top: 5px solid var(--twitter-color);
+
+    background-color: var(--card-bg);
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .instagram-column div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0em 6em;
+  }
+  .instagram-column h2 {
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--text);
+    padding-top: -2em;
+  }
+  .instagram-column h3 {
+    font-size: 1em;
+    font-weight: 200;
+    font-family: var(--font);
+    color: var(--dark-text);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: -15px;
+  }
+  .instagram-column p {
+    color: var(--dark-text);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    text-transform: lowercase;
+    display: block;
+  }
+  .instagram-column img {
+    width: 30px;
+  }
+  .insta-area2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .insta-area2 img {
+    width: 10px;
+    margin-right: -1.5em;
+  }
+  .insta-area2 p {
+    color: var(--arrow-up);
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: var(--font);
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .youtube-column {
+    border-top: 5px solid var(--youtube-color);
+
+    background-color: var(--card-bg);
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .youtube-column div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0em 6em;
+  }
+  .youtube-column h2 {
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--text);
+    padding-top: -2em;
+  }
+  .youtube-column h3 {
+    font-size: 1em;
+    font-weight: 200;
+    font-family: var(--font);
+    color: var(--dark-text);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: -15px;
+  }
+  .youtube-column p {
+    color: var(--dark-text);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    text-transform: capitalize;
+    display: block;
+  }
+  .youtube-column img {
+    width: 30px;
+  }
+  .youtube-area2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .youtube-area2 img {
+    width: 10px;
+    margin-right: -1.5em;
+  }
+  .youtube-area2 p {
+    color: var(--arrow-up);
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: var(--font);
+    font-weight: 500;
+    text-align: center;
+  }
+
+  div h4 {
+    margin-left: 2.4em;
+    text-justify: center;
+    margin-bottom: 2em;
+  }
+  .container-3 {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 1em;
+    padding: 0 4em;
+  }
+  .Dashboard {
+    background-color: var(--card-bg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 1em 0 1em;
+    margin-bottom: 1em;
+  }
+
+  .Dashboard div p {
+    color: var(--dark-text);
+    font-size: 15px;
+    font-family: var(--font);
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: left;
+  }
+  .Dashboard div h5 {
+    font-size: 1.7em;
+    font-family: var(--font);
+    font-weight: bold;
+    color: var(--text);
+    padding-top: 1em;
+    text-align: left;
+  }
+  .Dashboard .dash2 img {
+    text-align: right;
+    margin-bottom: 2em;
+  }
+  .Dashboard .dash2 div {
+    display: flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-evenly;
+  }
+
+  .Dashboard .dash2 div p {
+    color: var(--arrow-up);
+    font-size: 0.9em;
+    font-family: var(--font);
+    text-transform: capitalize;
+    text-align: right;
+    font-weight: 500;
+  }
+  .Dashboard .dash2 div img {
+    padding-top: 0.6em;
+    padding-right: -2px;
+  }
+  .Dashboard .dash2 .red {
+    color: var(--arrow-down);
+    font-size: 0.9em;
+    font-family: var(--font);
+    text-transform: capitalize;
+    text-align: right;
+    font-weight: 500;
+  }
+}
+
+@media all and (min-width: 1250px) {
+  .container {
+    width: 100%;
+    background-color: var(--bg-panel);
+    border-end-end-radius: 25px;
+    border-end-start-radius: 25px;
+    padding: 2em 1em 2.5em 1em;
+    overflow-x: hidden;
+  }
+  .warpper {
+    width: 100%;
+    background-color: var(--bg-panel);
+    margin-left: 2.4em;
+  }
+  h1 {
+    padding-top: 1.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  .warpper p {
+    display: block;
+    margin: 0.5em 1em -2em 1em;
+  }
+  hr {
+    display: none;
+  }
+  .toggle-area {
+    text-align: right;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding: 0.5em 1em 1em 2em;
+    margin-bottom: 8em;
+    margin-left: -2.2em;
+  }
+  .toggle-area p {
+    margin-right: 1em;
+  }
+  .label {
+    background: var(--toggle);
+    display: flex;
+    /* the align center and justify properties affect the icon in the label tag */
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 25px; */
+    border-radius: 50px;
+    height: 26px;
+    width: 50px;
+    position: relative;
+  }
+  .container-2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 0 auto;
+    position: relative;
+    min-height: 30vh;
+  }
+  .column-1 {
+    padding: 0 1em 0 1em;
+    position: absolute;
+    top: -35%;
+    left: 5%;
+    transform: translate(-5% -20%);
+  }
+  .facebook-column {
+    grid-column: 1/2;
+    border-top: 5px solid var(--facebook-color);
+    background-color: var(--card-bg);
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 2em 0;
+  }
+  .facebook-column div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0 6em;
+  }
+
+  .green {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .green img {
+    width: 10px;
+    margin-right: 0.5em;
+  }
+  .column-2 {
+    position: absolute;
+    top: -47%;
+    left: 26%;
+    transform: translate(-26% -47%);
+  }
+  .twitter-column {
+    grid-column: 2/3;
+    border-top: 5px solid var(--facebook-color);
+    background-color: var(--card-bg);
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 2em 0;
+    position: relative;
+    bottom: 0.5em;
+    margin: 0 2em 0 2em;
+  }
+  .twitter-column div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0 4em;
+  }
+  .twitter-column h2 {
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .twitter-column h3 {
+    font-size: 1em;
+    font-weight: 200;
+    font-family: var(--font);
+    color: var(--dark-text);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: -1em;
+  }
+  .twitter-column p {
+    color: var(--dark-text);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    text-transform: lowercase;
+    display: block;
+  }
+  .twitter-column img {
+    width: 30px;
+  }
+  .area-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .area-2 img {
+    width: 10px;
+    margin-right: -2em;
+  }
+  .area-2 p {
+    color: var(--arrow-up);
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: var(--font);
+    font-weight: 500;
+    text-align: center;
+  }
+  .column-3 {
+    padding: 0 1em 0 1em;
+    position: absolute;
+    top: -33%;
+    left: 49.5%;
+    transform: translate(-49.5% 33%);
+  }
+
+  .instagram-column {
+    border-top: 5px solid var(--twitter-color);
+    margin: 0 auto;
+    background-color: var(--card-bg);
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    grid-column: 3/4;
+    position: relative;
+    bottom: 4em;
+  }
+  .instagram-column div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0em 5em;
+  }
+
+  .insta-area2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .insta-area2 img {
+    width: 10px;
+    margin-right: -0.7em;
+  }
+
+  .column-last {
+    position: absolute;
+    top: -33%;
+    right: 3%;
+    transform: translate(3% -33%);
+  }
+  .youtube-column {
+    border-top: 5px solid var(--youtube-color);
+    grid-column: 4/5;
+    background-color: var(--card-bg);
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 1em 1em;
+    position: relative;
+    bottom: 4em;
+    margin-right: 4em;
+    margin-left: -2em;
+
+    margin-bottom: 5em;
+  }
+  .youtube-column div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0.5em 4.5em;
+  }
+
+  .youtube-area2 img {
+    width: 10px;
+    margin-right: -1em;
+  }
+  div h4 {
+    margin-left: 2.4em;
+    text-justify: center;
+    margin-bottom: 2em;
+  }
+  .container-3 {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 1em;
+    padding: 0 4em;
+  }
+  .Dashboard {
+    background-color: var(--card-bg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 1em 0 1em;
+    margin-bottom: 1em;
+  }
+
+  .Dashboard div p {
+    color: var(--dark-text);
+    font-size: 15px;
+    font-family: var(--font);
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: left;
+  }
+  .Dashboard div h5 {
+    font-size: 1.7em;
+    font-family: var(--font);
+    font-weight: bold;
+    color: var(--text);
+    padding-top: 1em;
+    text-align: left;
+  }
+  .Dashboard .dash2 img {
+    text-align: right;
+    margin-bottom: 2em;
+  }
+  .Dashboard .dash2 div {
+    display: flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-evenly;
+  }
+
+  .Dashboard .dash2 div p {
+    color: var(--arrow-up);
+    font-size: 0.9em;
+    font-family: var(--font);
+    text-transform: capitalize;
+    text-align: right;
+    font-weight: 500;
+  }
+  .Dashboard .dash2 div img {
+    padding-top: 0.6em;
+    padding-right: -2px;
+  }
+  .Dashboard .dash2 .red {
+    color: var(--arrow-down);
+    font-size: 0.9em;
+    font-family: var(--font);
+    text-transform: capitalize;
+    text-align: right;
+    font-weight: 500;
+  }
 }

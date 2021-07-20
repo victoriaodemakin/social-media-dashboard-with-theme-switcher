@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,10 +18,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
+    <section class="body-container">
     <section class="container">
       <div class="warpper">
         <h1>Social Media Dashboard</h1>
@@ -30,11 +31,12 @@
       </div>
       <div class="toggle-area">
         <p>Dark Mode</p>
-        <input type="checkbox" class="toggle-btn" id="checkbox" />
+        <input type="checkbox" name="theme"
+         class="toggle-btn" id="checkbox" />
         <!--the class will be usd to style the checkbox while the id will be refernced with js-->
         <label for="checkbox" class="label">
-          <img src="/images/moon.png" alt="moon icon " class="fa-moon">
-          <img src="/images/sun.png" alt="sun icon" class="fa-sun">
+          <img src="images/moon.png" alt="moon icon " class="fa-moon">
+          <img src="images/sun.png" alt="sun icon" class="fa-sun">
         <div class="slider-ball"></div>
       </div>
         </label>
@@ -43,11 +45,11 @@
     </section>
 
     <section class="container-2">
-      <div class="column">
+      <div class="column-1">
         <div class="facebook-column">
           <div>
           <img
-            src="/images/icon-facebook.svg"
+            src="images/icon-facebook.svg"
             alt="facebook-icon"
             class="facebook-icon"
           />
@@ -60,7 +62,7 @@
           <br />
           <div class="green">
             <img
-            src="/images/icon-up.svg"
+            src="images/icon-up.svg"
             alt="increase in followers"
             class="green-arrow"
           />
@@ -70,11 +72,11 @@
         </div>
       </div>
 
-      <div class="column">
+      <div class="column-2">
         <div class="twitter-column">
           <div class="area1">
             <img
-              src="/images/icon-twitter.svg"
+              src="images/icon-twitter.svg"
               alt="twitter-icon"
               class="twitter-icon"
             />
@@ -87,7 +89,7 @@
           <br />
           <div class="area-2">
             <img
-              src="/images/icon-up.svg"
+              src="images/icon-up.svg"
               alt="increase in followers"
               class="green-arrow"
             />
@@ -96,11 +98,11 @@
         </div>
       </div>
 
-      <div class="column">
+      <div class="column-3">
         <div class="instagram-column">
           <div class="insta-area">
             <img
-            src="/images/icon-instagram.svg"
+            src="images/icon-instagram.svg"
             alt="instagram-icon"
             class="instagram-icon"
           />
@@ -114,7 +116,7 @@
           <br />
           <div class="insta-area2">
             <img
-            src="/images/icon-up.svg"
+            src="images/icon-up.svg"
             alt="increase in followers"
             class="green-arrow"
           />
@@ -123,11 +125,11 @@
         </div>
       </div>
 
-      <div class="column">
+      <div class="column-last">
         <div class="youtube-column">
           <div class="youtube-area">
             <img
-            src="/images/icon-youtube.svg"
+            src="images/icon-youtube.svg"
             alt="youtube-icon"
             class="youtube-icon"
           />
@@ -141,7 +143,7 @@
           <br />
           <div class="youtube-area2">
             <img
-            src="/images/icon-down.svg"
+            src="images/icon-down.svg"
             alt="decrease in followers"
             class="red-arrow"
           />
@@ -165,12 +167,12 @@
         </div>
         <div class="dash2">
           <img
-          src="/images/icon-facebook.svg"
+          src="images/icon-facebook.svg"
           alt="facebook-icon"
           class="facebook-icon"
         />
         <div>
-          <img src="/images/icon-up.svg" alt="increase in page views" />
+          <img src="images/icon-up.svg" alt="increase in page views" />
           <p>3%</p>
         </div>
         </div>
@@ -183,12 +185,12 @@
         </div>
         <div class="dash2">
           <img
-            src="/images/icon-facebook.svg"
+            src="images/icon-facebook.svg"
             alt="facebook-icon"
             class="facebook-icon"
           />
           <div>
-            <img src="/images/icon-down.svg" alt="decrease in likes" />
+            <img src="images/icon-down.svg" alt="decrease in likes" />
           <p class="red">2%</p>
           </div>
         </div>
@@ -202,12 +204,12 @@
         </div>
         <div class="dash2">
           <img
-            src="/images/icon-instagram.svg"
+            src="images/icon-instagram.svg"
             alt="instagram-icon"
             class="instagram-icon"
           />
           <div>
-            <img src="/images/icon-up.svg" alt="increase in likes" />
+            <img src="images/icon-up.svg" alt="increase in likes" />
             <p>2257%</p>
           </div>
         </div>
@@ -220,12 +222,12 @@
         </div>
         <div class="dash2">
           <img
-            src="/images/icon-instagram.svg"
+            src="images/icon-instagram.svg"
             alt="instagram-icon"
             class="instagram-icon"
           />
           <div>
-            <img src="/images/icon-up.svg" alt="increase in Profile views" />
+            <img src="images/icon-up.svg" alt="increase in Profile views" />
             <p>1375%</p>
           </div>
         </div>
@@ -240,11 +242,11 @@
         </div>
         <div class="dash2">
           <img
-            src="/images/icon-twitter.svg"
+            src="images/icon-twitter.svg"
             alt="twitter-icon"
             class="twitter-icon" />
           <div>
-            <img src="/images/icon-up.svg" alt="increase in Retweets" />
+            <img src="images/icon-up.svg" alt="increase in Retweets" />
             <p>303%</p>
           </div>
           
@@ -259,12 +261,12 @@
         </div>
         <div class="dash2">
           <img
-            src="/images/icon-twitter.svg"
+            src="images/icon-twitter.svg"
             alt="twitter-icon"
             class="twitter-icon"
           />
           <div>
-            <img src="/images/icon-up.svg" alt="increase in likes" />
+            <img src="images/icon-up.svg" alt="increase in likes" />
             <p>553%</p>
           </div> 
         </div>
@@ -278,12 +280,12 @@
         </div>
         <div class="dash2">
           <img
-            src="/images/icon-youtube.svg"
+            src="images/icon-youtube.svg"
             alt="youtube-icon"
             class="youtube-icon"
           />
           <div>
-            <img src="/images/icon-down.svg" alt="decrease in likes" />
+            <img src="images/icon-down.svg" alt="decrease in likes" />
             <p class="red">19%</p>
           </div>
         </div>
@@ -297,16 +299,18 @@
         </div>
         <div class="dash2">
           <img
-            src="/images/icon-youtube.svg"
+            src="images/icon-youtube.svg"
             alt="youtube-icon"
             class="youtube-icon"
           />
           <div>
-            <img src="/images/icon-down.svg" alt="decrease in total views" />
+            <img src="images/icon-down.svg" alt="decrease in total views" />
             <p class="red">1407%</p>
           </div>
         </div>
       </div>
     </section>
+  </section>
+    <script src="app/script.js"></script>
   </body>
 </html>

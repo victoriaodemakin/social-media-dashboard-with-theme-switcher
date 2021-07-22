@@ -559,7 +559,10 @@ div h4 {
 @keyframes overview{
   0%{
     opacity: 0;
-    transform: translateY(-1000px);
+    transform: translateY(-50px);
+  }
+  55%{
+    opacity: 0;
   }
   100%{
     opacity: 1;
@@ -568,7 +571,10 @@ div h4 {
 @keyframes dashcard1{
   0%{
     opacity: 0;
-    transform: translateY(-1200px);
+    transform: translateY(-200px);
+  }
+  75%{
+    opacity: 0;
   }
   100%{
     opacity: 1;
@@ -577,7 +583,10 @@ div h4 {
 @keyframes dashcard2{
   0%{
     opacity: 0;
-    transform: translateY(-1300px);
+    transform: translateY(-200px);
+  }
+  75%{
+    opacity: 0;
   }
   100%{
     opacity: 1;
@@ -586,7 +595,10 @@ div h4 {
 @keyframes dashcard3{
   0%{
     opacity: 0;
-    transform: translateY(-1400px);
+    transform: translateY(-200px);
+  }
+  75%{
+    opacity: 0;
   }
   100%{
     opacity: 1;
@@ -595,7 +607,10 @@ div h4 {
 @keyframes dashcard4{
   0%{
     opacity: 0;
-    transform: translateY(-1500px);
+    transform: translateY(-200px);
+  }
+  75%{
+    opacity: 0;
   }
   100%{
     opacity: 1;
@@ -604,7 +619,10 @@ div h4 {
 @keyframes dashcard5{
   0%{
     opacity: 0;
-    transform: translateY(-1600px);
+    transform: translateY(-200px);
+  }
+  75%{
+    opacity: 0;
   }
   100%{
     opacity: 1;
@@ -613,7 +631,10 @@ div h4 {
 @keyframes dashcard6{
   0%{
     opacity: 0;
-    transform: translateY(-1700px);
+    transform: translateY(-200px);
+  }
+  50%{
+    opacity: 0;
   }
   100%{
     opacity: 1;
@@ -622,7 +643,10 @@ div h4 {
 @keyframes dashcard7{
   0%{
     opacity: 0;
-    transform: translateY(-1800px);
+    transform: translateY(-200px);
+  }
+  50%{
+    opacity: 0;
   }
   100%{
     opacity: 1;
@@ -631,7 +655,10 @@ div h4 {
 @keyframes dashcard8{
   0%{
     opacity: 0;
-    transform: translateY(-1900px);
+    transform: translateY(-200px);
+  }
+  50%{
+    opacity: 0;
   }
   100%{
     opacity: 1;
@@ -643,44 +670,44 @@ div h4 {
   animation: anime 500ms ease-in 1 forwards;
 }
 .facebook-column{
-  animation: facebook-column 800ms ease-in-out 1 forwards;
+  animation: facebook-column 800ms ease-in 1 forwards;
 }
 .twitter-column{
-  animation: twitter-column 1s ease-in-out 1 forwards;
+  animation: twitter-column 1s ease-in 1 forwards;
 }
 .instagram-column{
- animation:instagram-column 1.2s ease-in-out 1 forwards;
+ animation:instagram-column 1.2s ease-in 1 forwards;
 }
 .youtube-column{
-  animation: youtube-column 1.4s ease-in-out 1 forwards;
+  animation: youtube-column 1.4s ease-in 1 forwards;
 
 }
 div h4{
-  animation: overview 1.5s linear 1;
+  animation: overview 1.8s ease-in 1;
 }
 .dashcard1{
-  animation: dashcard1 1.8s ease-in-out 1 forwards;
+  animation: dashcard1 3.6s linear 1 forwards;
 }
 .dashcard2{
-  animation: dashcard2 1.9s ease-in-out 1 forwards;
+  animation: dashcard2 3.4s linear 1 forwards;
 }
 .dashcard3{
-  animation: dashcard3 1.95s ease-in-out 1 forwards;
+  animation: dashcard3 3.2s linear 1 forwards;
 }
 .dashcard4{
-  animation: dashcard4 1.8s ease-in-out 1 forwards;
+  animation: dashcard4 3.0s linear 1 forwards;
 }
 .dashcard5{
-  animation: dashcard5 1.9s ease-in-out 1 forwards;
+  animation: dashcard5 2.9s linear 1 forwards;
 }
 .dashcard6{
-  animation: dashcard6 2s ease-in-out 1 forwards;
+  animation: dashcard6 2.7s linear 1 forwards;
 }
 .dashcard7{
-  animation: dashcard7 2.1s ease 1 forwards;
+  animation: dashcard7 2.5s linear 1 forwards;
 }
 .dashcard8{
-  animation: dashcard8 2.2s ease-in-out 1 forwards;
+  animation: dashcard8 2.3s linear 1 forwards;
   background: pink;
 }
 
